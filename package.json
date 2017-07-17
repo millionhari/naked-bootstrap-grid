@@ -1,0 +1,11 @@
+{
+  "name": "naked-bootstrap-grid",
+  "version": "1.0.0",
+  "description": "A stripped version of bootstrap's grid with the addition of mixins to target specific viewports",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Michael Hari",
+  "license": "ISC"
+}

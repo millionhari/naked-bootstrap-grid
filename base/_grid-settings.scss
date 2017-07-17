@@ -1,0 +1,27 @@
+// Breakpoints
+$bp-xs:           "(max-width: 767px)";
+$bp-sm:           "(min-width: 768px)";
+$bp-md:           "(min-width: 992px)";
+$bp-lg:           "(min-width: 1280px)";
+
+// Extends bootstrap
+@mixin xs {
+ @media #{$bp-xs} {
+   @content;
+ }
+}
+@mixin sm {
+ @media #{$bp-sm} {
+   @content;
+ }
+}
+@mixin md {
+ @media #{$bp-md} {
+   @content;
+ }
+}
+@mixin lg {
+ @media #{$bp-lg} {
+   @content;
+ }
+}

@@ -1,0 +1,30 @@
+// Basic distance of spacing using the naming convention of Bootstrap.
+$positions:     top left right bottom;
+$no-space:      0px;
+$xs-space:      10px;
+$sm-space:      20px;
+$md-space:      40px;
+$lg-space:      60px;
+$xl-space:      100px;
+
+// Generates a bunch of spacings using margins
+// Example of static classes: "no-margin-top" "lg-margin-left" "sm-margin-top"
+@each $position in $positions {
+  .no-margin-#{$position} { margin-#{$position}: $no-space; }
+  .xs-margin-#{$position} { margin-#{$position}: $xs-space; }
+  .sm-margin-#{$position} { margin-#{$position}: $sm-space; }
+  .md-margin-#{$position} { margin-#{$position}: $md-space; }
+  .lg-margin-#{$position} { margin-#{$position}: $lg-space; }
+  .xl-margin-#{$position} { margin-#{$position}: $xl-space; }
+}
+
+// Generates a bunch of spacing using paddings
+// Example of static classes: "no-padding-top" "lg-padding-left" "sm-padding-top"
+@each $position in $positions {
+  .no-padding-#{$position} { padding-#{$position}: $no-space; }
+  .xs-padding-#{$position} { padding-#{$position}: $xs-space; }
+  .sm-padding-#{$position} { padding-#{$position}: $sm-space; }
+  .md-padding-#{$position} { padding-#{$position}: $md-space; }
+  .lg-padding-#{$position} { padding-#{$position}: $lg-space; }
+  .xl-padding-#{$position} { padding-#{$position}: $xl-space; }
+}

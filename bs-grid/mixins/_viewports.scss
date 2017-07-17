@@ -1,0 +1,22 @@
+@mixin viewport ($size, $size-max:""){
+  @if $size == large {
+    @media only screen and (max-width: $screen-lg) {
+      @content;
+    }
+  }
+  @else if $size == medium {
+    @media only screen and (max-width: $screen-md) {
+      @content;
+    }
+  }
+  @else if $size == small {
+    @media only screen and (max-width: $screen-sm) {
+      @content;
+    }
+  }
+  @else if $size == xsmall {
+    @media only screen and (max-width: $screen-xs) {
+      @content;
+    }
+  }
+}
